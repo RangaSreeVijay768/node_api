@@ -17,7 +17,7 @@ const options = {
         },
         servers:[
             {
-                url: 'http://localhost:3000/'
+                url: 'http://localhost:3000/products'
             }
         ]
     },
@@ -25,7 +25,7 @@ const options = {
 };
 
 const swaggerSpec = swaggerJSDoc(options);
-app.use('/api-docs1', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 /**
  * @swagger
