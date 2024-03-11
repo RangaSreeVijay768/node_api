@@ -32,7 +32,7 @@ const userRoutes = require('./rest_api/routes/users');
 // app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 
-mongoose.connect("mongodb+srv://ranga:" + process.env.MONGO_ATLAS_PASSWORD + "@test-crud-database.jngbtvf.mongodb.net/?retryWrites=true&w=majority&appName=test-crud-database", {
+mongoose.connect("mongodb+srv://ranga:VidyaDatta%40123@test-crud-database.jngbtvf.mongodb.net/?retryWrites=true&w=majority&appName=test-crud-database", {
     ssl: true,
 })
     .then(() => {
